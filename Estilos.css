@@ -1,0 +1,344 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+
+/* MENU */
+
+.menu{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#1e3d59;
+padding:15px 40px;
+}
+
+.logo{
+color:white;
+}
+
+.menu ul{
+display:flex;
+list-style:none;
+}
+
+.menu li{
+margin-left:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.menu a:hover{
+color:#f9a826;
+}
+
+/* INTRO */
+
+.inicio{
+height: 0 auto;
+background-image: url("Imagenes/Volcan\ Cayambe.png");
+background-size: cover;
+background-position: center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+/* capa oscura para que el texto se vea mejor */
+.inicio::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0, 0.331);
+}
+
+.contenido-inicio{
+position:relative;
+max-width:700px;
+padding:20px;
+}
+
+.contenido-inicio h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.contenido-inicio p{
+font-size:20px;
+}
+
+/* ZONAS TURISTICAS */
+
+.zonas{
+padding:50px;
+text-align:center;
+background:white;
+}
+
+.contenedor-zonas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.zona{
+background:#f4f4f4;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.zona img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.zona h3{
+margin:10px;
+}
+
+.zona p{
+padding:10px;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+padding:50px;
+text-align:center;
+}
+
+.contenedor-nosotros{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.mision, .vision{
+background:white;
+padding:25px;
+width:300px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* CONTACTO */
+
+.contacto{
+padding:60px 20px;
+background:#f4f4f4;
+text-align:center;
+}
+
+.contacto h2{
+font-size:35px;
+margin-bottom:40px;
+}
+
+.contenedor-contacto{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+max-width:1000px;
+margin:auto;
+}
+
+/* Información */
+
+.nosotros{
+padding:70px 20px;
+background:white;
+text-align:center;
+}
+
+.nosotros h2{
+font-size:35px;
+margin-bottom:20px;
+}
+
+.intro-nosotros{
+max-width:700px;
+margin:auto;
+font-size:18px;
+margin-bottom:40px;
+color:#555;
+}
+
+.contenedor-nosotros{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.tarjeta-nosotros{
+background:#f4f4f4;
+padding:30px;
+border-radius:10px;
+width:320px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+.tarjeta-nosotros:hover{
+transform:translateY(-8px);
+}
+
+.tarjeta-nosotros h3{
+margin-top:0;
+color:#1e3d59;
+}
+
+/* Formulario */
+
+.formulario-contacto{
+background:white;
+padding:30px;
+border-radius:10px;
+width:400px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.formulario-contacto form{
+display:flex;
+flex-direction:column;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+margin:10px 0;
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.formulario-contacto textarea{
+height:120px;
+resize:none;
+}
+
+.formulario-contacto button{
+margin-top:10px;
+padding:12px;
+border:none;
+background:#1e3d59;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.formulario-contacto button:hover{
+background:#f9a826;
+color:black;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#1e3d59;
+  color:#fff;
+  font-family:Arial, sans-serif;
+}
+
+.footer a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
+/* Parte superior del footer */
+.footer-top{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding:40px;
+  gap:20px;
+}
+
+.footer-section{
+  flex:1 1 250px;
+}
+
+/* Mensaje / suscripción */
+.mensaje form{
+  display:flex;
+  margin-bottom:10px;
+}
+
+.mensaje input[type="email"]{
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:5px 0 0 5px;
+  outline:none;
+}
+
+.mensaje button{
+  padding:10px 15px;
+  border:none;
+  background:#f9a826;
+  border-radius:0 5px 5px 0;
+  cursor:pointer;
+  color:#1e3d59;
+  font-weight:bold;
+}
+
+/* Redes sociales */
+.redes .iconos{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+/* Menú del footer */
+.menu-footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.menu-footer ul li{
+  margin-bottom:8px;
+}
+
+/* Footer inferior */
+.footer-bottom{
+  background:#14606c;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:800px){
+  .footer-top{
+    flex-direction:column;
+    text-align:center;
+  }
+  .mensaje form{
+    flex-direction:column;
+  }
+  .mensaje input[type="email"], .mensaje button{
+    width:100%;
+    margin:5px 0;
+  }
+}
